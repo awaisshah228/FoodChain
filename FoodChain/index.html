@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Order Portal</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1 style="text-align: center;">Food Order Portal</h1>
+        <hr>
+        <p style="text-align: center;">Order Food via Ethereum blockchain.</p>
+    </div>
+
+    <div id="ftc-harvest">
+        <h2>Consumer Orders Food</h2>
+        <div class="form-group">
+            Order Id
+            <br>
+            <input class="input-field" type="number" id="orderID" name="sku" value=1><br>
+            Order Amount 
+            <br>
+            <input type="number" id="totalAmount" name="totalAmount" value=330>ETH<br>
+            Delivery Charge <br>
+            <input type="number" id="deliveryCharge" name ="deliveryCharge" value=30>ETH<br>
+            Consumer Owner ID
+            <br>
+            <input type="text" id="consumerID" name="consumerID" value="" size="50"><br>
+
+            Order Notes 
+            <br>
+            <input type="text" id = "OrderNotes" name="OrderNotes" placeholder="Notes"><br>        
+            <div class=button-div>
+                <button class="btn-placeOrder" id="button" type="button" data-id="1">Place Order</button>
+                <button class="btn-getOrder" id="button" type="button" data-id="7">Order Status</button>
+                <button class="btn-orderRecieved" id="button" type="button" data-id="5">Order Received</button>
+            </div>
+        </div>
+        <div class=form-break></div>
+        <h2>Kitchen</h2>
+        <div class="form-group">
+            Order ID
+            <br>
+            <input type="text" id="orderId" name="orderId" value=""
+                size="50"><br>
+            Distributor Id
+            <br>
+            <input type="text" id="distributorId" name="distributorId" value=""><br>
+            Kitchen ID
+            <br>
+            <input type="text" id="kitchenId" name="kitchenId" value=""><br>
+            <br>
+            <button class="btn-getOrder" id="button" type="button" data-id="2">Get Order</button>
+            <button class="btn-OrderReady" id="button" type="button" data-id="3">Order Ready</button>             
+        </div>
+        <div class=form-break></div>
+        <h2>Distributor Details</h2>
+        <button class="btn-OrderReady" id="button" type="button" data-id="8">Show Orders</button>             
+        <div class="form-group">
+            <dl>
+                <dt>Order Id</dt>
+                <dd  id="dOrderId" ></dd>
+                <dt>Delivery Charge</dt>
+                <dd id="dDeliveryCharge"></dd>
+                <dt>Distributor Id</dt>
+                <dd id="dKitchenID"></dd>
+                <dt>Kitchen Id</dt>
+                <dd id="dDistributorID" > </dd>
+                <dt>Consumer Id</dt>
+                <dd id="dConsumerID"> </dd>
+            </dl>                    
+        </div>
+        <div class=form-break></div>
+        <h2>Delivery Person</h2>
+        <div class="form-group">
+            Order Id
+            <br>
+            <input type="text" id="productNotes" name="productNotes" value="" size="5"><br>
+            Delivery ID  
+            <br>
+            <input type="text" id="deliveryID" name="deliveryID"><br>
+            <button class="btn-buy" id="button" type="button" data-id="4">PickOrder</button>
+            <button class="btn-ship" id="button" type="button" data-id="6">Order Delivered </button>
+
+        </div>
+        <div class=form-break></div>
+        
+
+        <hr>
+    </div>
+
+    <h2>Transaction History<span id="ftc-history"></span></h2>
+    <div>
+        <ul id="ftc-events">
+            <!-- Events will appear here from app.js -->
+        </ul>
+        <br>
+        <hr>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- <script src="js/web3.min.js"></script> -->
+    <script src="js/truffle-contract.js"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>

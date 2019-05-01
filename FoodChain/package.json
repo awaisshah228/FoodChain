@@ -1,0 +1,21 @@
+{
+  "name": "foodChain",
+  "version": "1.0.0",
+  "description": "Supply chain DApp for food industry.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "lite-server",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Prince Kumar Maurya <princesenpai@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "lite-server": "2.4.0"
+  },
+  "dependencies": {
+    "truffle-assertions": "^0.8.2",
+    "truffle-hdwallet-provider": "^1.0.8",    
+    "web3-utils": "^1.0.0-beta.52"
+  }
+}
