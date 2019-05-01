@@ -55,7 +55,9 @@ These instructions will get you a copy of the project up and running on your loc
 ### Prerequisites
 
 Please make sure you've already installed ganache-cli, Truffle and enabled MetaMask extension in your browser.
-
+* Truffle v5.0.3 (core: 5.0.3)
+* Node v10.15.0
+* Web3@1.0.0-beta.37 
 
 ### Installing
 
@@ -112,7 +114,7 @@ npm run dev
  
 ## Acknowledgments
 
-* Solidity
+* Solidity 
 * Ganache-cli
 * Truffle
 * IPFS
